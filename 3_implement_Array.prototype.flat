@@ -1,0 +1,19 @@
+```
+/**
+ * @param { Array } arr
+ * @param { number } depth
+ * @returns { Array }
+ */
+function flat(arr, depth = 1) {
+  // your imeplementation here
+  let flatArr = arr.reduce((acc,val)=>{ 
+    if(Array.isArray(val) && depth>0 ){
+      acc.push(...flat(val,depth-1))
+    }else{
+      acc.push(val)
+    }
+    return acc
+    },[])
+    return flatArr
+}
+```
