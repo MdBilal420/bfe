@@ -1,3 +1,5 @@
+Problem Link : https://bigfrontend.dev/problem/implement-basic-throttle
+
 ```
 function throttle(func, delay) {
  let lastArgs = null, timer = null;
